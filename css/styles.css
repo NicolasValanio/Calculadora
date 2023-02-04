@@ -67,6 +67,11 @@ body{
         font-size: 2.5rem;
     }
 }
+@media (min-width: 1140px) {
+    .container{
+        width: 30%;
+    }
+}
 .display{
     background-color: aliceblue;
     grid-column: 1/5;
@@ -127,3 +132,4 @@ button:hover{
         font-size: 4rem;
     } 
 }
+
