@@ -4,7 +4,9 @@ document.addEventListener('keypress', function(event){
   if (event.key === "Enter" || event.key ==="Intro") {
     calcular();
    } else {
-       escribir(event.key);
+      if (!isNaN(event.key) || event.key === "." || event.key === "-" || event.key === "+" || event.key === "*" || event.key === "/") {
+         escribir(event.key);
+      }
    }
 })
 
@@ -31,4 +33,3 @@ function calcular() {
 function borrar(){
     display.value="";
 }
-
