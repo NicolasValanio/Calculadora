@@ -34,8 +34,8 @@ body{
     margin: auto;
     background-color: #1E96FC;
     padding: 2rem;
-    width: 30%;
-    height: 70rem;
+    width: 90%;
+    height: 50rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -45,6 +45,27 @@ body{
     -webkit-box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
     -moz-box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
     box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
+}
+@media (min-width: 768px) {
+    .container{
+        margin: auto;
+        background-color: #1E96FC;
+        padding: 2rem;
+        width: 50%;
+        height: 70rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        border: solid 2px black;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
+        box-shadow: 0px 0px 37px 3px rgba(255,255,255,1);
+    }
+    button:hover{
+        font-size: 2.5rem;
+    }
 }
 .display{
     background-color: aliceblue;
@@ -61,7 +82,7 @@ button{
     font-family: var(--FuenteMain);
     width: 100%;
     height: 100%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     border: solid 1px black;
     border-radius: 10px;
@@ -69,7 +90,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    font-size: 4rem;
+    font-size: 2.3rem;
     color: #F18F01;
 }
 .containerSuma{
@@ -85,8 +106,24 @@ button:hover{
 }
 .creditos{
     color: white;
-    text-align: right;
-    margin-right: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    /* margin-right: 2rem; */
     font-size: 2rem;
     font-family: var(--FuenteTitulo);
+}
+@media (min-width: 768px) {
+    .creditos{
+        color: white;
+        text-align: right;
+        margin-right: 2rem;
+        font-size: 2rem;
+        font-family: var(--FuenteTitulo);
+    } 
+    button{
+        font-size: 3rem;
+    } 
+    button:hover{
+        font-size: 4rem;
+    } 
 }
