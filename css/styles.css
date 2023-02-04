@@ -83,3 +83,10 @@ button:hover{
     grid-row: 5/7;
     grid-column: 4/5;
 }
+.creditos{
+    color: white;
+    text-align: right;
+    margin-right: 2rem;
+    font-size: 2rem;
+    font-family: var(--FuenteTitulo);
+}
