@@ -15,6 +15,7 @@
 html{
     font-size: 62.5%;
     background-color: black;
+    transition: .3s;
   }
 body{
     font-size: 16px;
@@ -50,9 +51,11 @@ body{
     grid-column: 1/5;
     border: solid 3px black;
     border-radius: 10px;
-    text-align: end;
-    font-family: 3rem;
+    text-align:right;
+    font-family: var(--FuenteMain);
     font-weight: 700;
+    font-size: 8rem;
+    transition: 0s;
 }
 button{
     font-family: var(--FuenteMain);
@@ -63,6 +66,11 @@ button{
     border: solid 1px black;
     border-radius: 10px;
     background-color: #15B097 ;
+    cursor: pointer;
+}
+button:hover{
+    font-size: 4rem;
+    color: #F18F01;
 }
 .containerSuma{
     grid-column: 4/5;

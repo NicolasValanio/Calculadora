@@ -16,25 +16,26 @@
 
     <main>
         <div class="container">
-            <div class="display" id="display"></div>
-            <div class="container2"><button type="button">Clear</button></div>
-            <div class="container2"><button type="button" id="btnDivision">/</button></div>
-            <div class="container2"><button type="button" id="btnMulti">*</button></div>
-            <div class="container2"><button type="button" id="btnResta">-</button></div>
-            <div class="container2"><button type="button" id="btn7">7</button></div>
-            <div class="container2"><button type="button" id="btn8">8</button></div>
-            <div class="container2"><button type="button" id="btn9">9</button></div>
-            <div class="containerSuma"><button type="button" id="btnSuma">+</button></div>
-            <div class="container2"><button type="button" id="btn4">4</button></div>
-            <div class="container2"><button type="button" id="btn5">5</button></div>
-            <div class="container2"><button type="button" id="btn6">6</button></div>
-            <div class="container2"><button type="button" id="btn1">1</button></div>
-            <div class="container2"><button type="button" id="btn2">2</button></div>
-            <div class="container2"><button type="button" id="btn3">3</button></div>
-            <div class="containerIntro"><button type="button" id="btnIntro">=</button></div>
-            <div class="container0"><button type="button" id="btn0">0</button></div>
-            <div class="container2"><button type="button" id="btnPunto">.</button></div>
+            <input type="text" class="display" id="display" disabled>
+            <div class="container2"><button type="button" id="btnBorrar" onclick="borrar()">Clear</button></div>
+            <div class="container2"><button type="button" id="btnDivision" onclick="escribir('/')">/</button></div>
+            <div class="container2"><button type="button" id="btnMulti" onclick="escribir('*')">*</button></div>
+            <div class="container2"><button type="button" id="btnResta" onclick="escribir('-')">-</button></div>
+            <div class="container2"><button type="button" id="btn7" onclick="escribir('7')">7</button></div>
+            <div class="container2"><button type="button" id="btn8" onclick="escribir('8')">8</button></div>
+            <div class="container2"><button type="button" id="btn9" onclick="escribir('9')">9</button></div>
+            <div class="containerSuma"><button type="button" id="btnSuma" onclick="escribir('+')">+</button></div>
+            <div class="container2"><button type="button" id="btn4" onclick="escribir('4')">4</button></div>
+            <div class="container2"><button type="button" id="btn5" onclick="escribir('5')">5</button></div>
+            <div class="container2"><button type="button" id="btn6" onclick="escribir('6')">6</button></div>
+            <div class="container2"><button type="button" id="btn1" onclick="escribir('1')">1</button></div>
+            <div class="container2"><button type="button" id="btn2" onclick="escribir('2')">2</button></div>
+            <div class="container2"><button type="button" id="btn3" onclick="escribir('3')">3</button></div>
+            <div class="containerIntro"><button type="button" id="btnIntro" onclick="calcular()">=</button></div>
+            <div class="container0"><button type="button" id="btn0" onclick="escribir('0')">0</button></div>
+            <div class="container2"><button type="button" id="btnPunto" onclick="escribir('.')">.</button></div>
         </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
